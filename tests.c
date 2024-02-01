@@ -1,16 +1,12 @@
 #include <stdio.h>
-#define RATIO 5.0 / 9.0
-#define STEP 20
-/* print Fahrenheit-Celsius table
-   for fahr = 0, 20,...,300*/
+
+/*copy input to output*/
 int main() {
-    
-  int fahr;
-  
-  for(fahr=300;fahr>=0;fahr=fahr-STEP) {
-  
-      printf("%3d\t%6.5f\n", fahr, RATIO*(fahr-32));
-    
+  int c;
+  c = getchar();
+  while (c != EOF) {
+    putchar(c);
+    c=getchar();
   }
   return 0;
 }
